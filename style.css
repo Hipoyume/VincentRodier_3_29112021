@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color1: #9356DC;
+  --color2: #FF79DA;
+  --color3: #99E2D0;
+}
+
 body {
   margin: 0px;
   font-family: 'Roboto', sans-serif;
@@ -17,16 +23,46 @@ header {
   padding: 0.2rem;
 }
 
-.presentation section {
+.presentation div {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   background-color: rgb(231, 231, 231);
   padding: 0.5rem;
+  font-weight: bold;
 }
 
 .presentation i {
   font-size: 1.5rem;
   margin-bottom: 0.3rem;
+}
+
+.reservation {
+  background: rgb(241, 241, 241);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.reservation h2 {
+  font-size: 2rem;
+}
+
+.reservation p {
+  font-size: 1.5rem;
+}
+
+.reservation button {
+  margin-top: 1rem;
+  background: linear-gradient(0deg, rgba(147,86,220,0.7483368347338936) 0%, rgba(255,121,218,1) 80%);  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  transition: 0.18s;
+}
+
+.reservation button:hover {
+  transform: scale(1.018);
 }
