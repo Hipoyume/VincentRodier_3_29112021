@@ -1,0 +1,22 @@
+{
+  "name": "vincentrodier_3_29112021",
+  "version": "1.0.0",
+  "description": "Troisieme projet chez OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hipoyume/VincentRodier_3_29112021.git"
+  },
+  "author": "Vincent Rodier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hipoyume/VincentRodier_3_29112021/issues"
+  },
+  "homepage": "https://github.com/Hipoyume/VincentRodier_3_29112021#readme",
+  "devDependencies": {
+    "sass": "^1.44.0"
+  }
+}
