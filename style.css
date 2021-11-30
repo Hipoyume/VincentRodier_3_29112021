@@ -1,18 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-*, ::before, ::after {
-  box-sizing: border-box;
-}
-
-:root {
-  --color1: #9356DC;
-  --color2: #FF79DA;
-  --color3: #99E2D0;
-}
-
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
 }
 
 header {
@@ -22,7 +16,7 @@ header {
   padding: 0.2rem;
 }
 
-.presentation div {
+.presentation {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,7 +25,6 @@ header {
   padding: 0.5rem;
   font-weight: bold;
 }
-
 .presentation i {
   font-size: 1.5rem;
   margin-bottom: 0.3rem;
@@ -43,15 +36,12 @@ header {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-
 .reservation h2 {
   font-size: 2rem;
 }
-
 .reservation p {
   font-size: 1.5rem;
 }
-
 .reservation button {
   margin-top: 1rem;
   background: linear-gradient(0deg, rgba(147, 86, 220, 0.7483368347) 0%, #ff79da 80%);
@@ -62,9 +52,14 @@ header {
   border: none;
   transition: 0.18s;
 }
-
 .reservation button:hover {
   transform: scale(1.018);
+}
+
+:root {
+  --color1: #9356DC;
+  --color2: #FF79DA;
+  --color3: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */
