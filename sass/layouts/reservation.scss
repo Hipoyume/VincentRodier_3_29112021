@@ -1,7 +1,10 @@
+@import "../utils/box-shadow.scss";
+@import "../utils/transform-scale";
+
 .reservation {
   background: rgb(241, 241, 241);
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
   & h2 {
     font-size: 2rem;
@@ -12,14 +15,15 @@
   & button {
     margin-top: 1rem;
     background: linear-gradient(0deg, rgba(147,86,220,0.7483368347338936) 0%, rgba(255,121,218,1) 80%);  color: white;
+    @include b-shadow;
     font-size: 1.5rem;
     padding: 1rem 2rem;
     border-radius: 2rem;
     border: none;
     transition: 0.18s;
+    cursor: pointer;
   }
   & button:hover {
-    transform: scale(1.018);
+    @include t-scale;
   }
-  
 }

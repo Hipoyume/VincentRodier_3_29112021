@@ -1,19 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 body {
-  margin: 0px;
   font-family: "Roboto", sans-serif;
 }
 
 *, ::before, ::after {
   box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 header {
+  font-size: larger;
+  background: white;
   font-family: "shrikhand", cursive;
   text-align: center;
   border-bottom: 0.2rem solid rgba(0, 0, 0, 0.245);
-  padding: 0.2rem;
+  padding: 0.1rem;
+}
+@media (max-width: 991px) {
+  header {
+    background: none;
+  }
 }
 
 .presentation {
@@ -23,7 +33,9 @@ header {
   gap: 1rem;
   background-color: #e7e7e7;
   padding: 0.5rem;
-  font-weight: bold;
+  font-weight: lighter;
+  color: #535353;
+  font-size: smaller;
 }
 .presentation i {
   font-size: 1.5rem;
@@ -33,7 +45,7 @@ header {
 .reservation {
   background: #f1f1f1;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
 }
 .reservation h2 {
@@ -46,11 +58,13 @@ header {
   margin-top: 1rem;
   background: linear-gradient(0deg, rgba(147, 86, 220, 0.7483368347) 0%, #ff79da 80%);
   color: white;
+  box-shadow: 2px 1px 8px -3px #000000;
   font-size: 1.5rem;
   padding: 1rem 2rem;
   border-radius: 2rem;
   border: none;
   transition: 0.18s;
+  cursor: pointer;
 }
 .reservation button:hover {
   transform: scale(1.018);
@@ -62,12 +76,41 @@ header {
   --color3: #99E2D0;
 }
 
+.fonctionnement {
+  padding: 1rem 2rem;
+  background: white;
+}
+@media (max-width: 991px) {
+  .fonctionnement {
+    background: none;
+  }
+}
 .fonctionnement ol {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (max-width: 991px) {
+  .fonctionnement ol {
+    flex-direction: column;
+  }
 }
 .fonctionnement li {
   background-color: #f6f6f6;
+  box-shadow: 2px 1px 8px -3px #000000;
   padding: 1rem 2rem;
+  border: 1px solid red;
+  border-radius: 1rem;
+  flex-grow: 1;
+}
+.fonctionnement li:hover {
+  transform: scale(1.018);
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  background: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */
