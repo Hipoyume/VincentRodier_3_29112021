@@ -52,6 +52,7 @@ header {
   font-size: 2rem;
 }
 .reservation p {
+  color: #5a5a5a;
   font-size: 1.5rem;
 }
 .reservation button {
@@ -59,7 +60,7 @@ header {
   background: linear-gradient(0deg, rgba(147, 86, 220, 0.7483368347) 0%, #ff79da 80%);
   color: white;
   box-shadow: 2px 1px 8px -3px #000000;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 1rem 2rem;
   border-radius: 2rem;
   border: none;
@@ -87,8 +88,7 @@ header {
 }
 .fonctionnement ol {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 @media (max-width: 991px) {
   .fonctionnement ol {
@@ -96,15 +96,31 @@ header {
   }
 }
 .fonctionnement li {
+  margin-right: 1rem;
   background-color: #f6f6f6;
   box-shadow: 2px 1px 8px -3px #000000;
-  padding: 2rem 1rem;
-  border: 1px solid red;
-  border-radius: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 1.5rem;
   flex-grow: 1;
+  font-weight: bold;
+}
+.fonctionnement li::before {
+  content: "counter" steps;
+  counter-increment: steps;
 }
 .fonctionnement li:hover {
   transform: scale(1.018);
+  background-color: #f2e8fd;
+}
+.fonctionnement li:hover i {
+  color: #9356DC;
+}
+.fonctionnement li i {
+  font-size: large;
+  color: gray;
+  margin-right: 1.5rem;
+  margin-left: 2.5rem;
 }
 
 body {

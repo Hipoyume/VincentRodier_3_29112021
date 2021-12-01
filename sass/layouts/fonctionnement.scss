@@ -1,3 +1,6 @@
+@use "../utils/box-shadow.scss";
+@use "../utils/transform-scale";
+
 .fonctionnement {
   padding: 1rem 2rem;
   background: white;
@@ -6,21 +9,37 @@
   }
   & ol {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
     @media (max-width: 991px){
       flex-direction: column;
     }
   }
   & li {
+    &::before {
+      content: "counter"(steps);
+      counter-increment: steps;
+    }
+    margin-right: 1rem;
     background-color: #f6f6f6;
-    @include b-shadow;
-    padding: 2rem 1rem;
-    border: 1px solid red;
-    border-radius: 1rem;
+    @include box-shadow.b-shadow;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 1.5rem;
     flex-grow: 1;
+    font-weight: bold;
+    
     &:hover {
-      @include t-scale;
+      @include transform-scale.t-scale;
+      background-color: #f2e8fd;
+      i{
+        color: #9356DC;
+      }
+    }
+    & i {
+      font-size: large;
+      color: gray;
+      margin-right: 1.5rem;
+      margin-left: 2.5rem;
     }
   }
 }

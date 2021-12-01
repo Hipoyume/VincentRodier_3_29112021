@@ -1,18 +1,12 @@
-@import "./sass/base/typography.scss";
-@import "./sass/base/box-sizing.scss";
-@import "./sass/layouts/header";
-@import "./sass/layouts/presentation";
-@import "./sass/layouts/reservation";
-@import "./sass/utils/variables";
-@import "./sass/layouts/fonctionnement";
+@use "./sass/base/typography.scss";
+@use "./sass/base/box-sizing.scss";
+@use "./sass/layouts/header";
+@use "./sass/layouts/presentation";
+@use "./sass/layouts/reservation";
+@use "./sass/utils/variables";
+@use "./sass/layouts/fonctionnement";
+@use "./sass/base/body.scss";
 
-
-
-body {
-  max-width: 1200px;
-  margin: auto;
-  background: #99E2D0;
-}
 
 
 
