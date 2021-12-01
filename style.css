@@ -62,4 +62,12 @@ header {
   --color3: #99E2D0;
 }
 
+.fonctionnement ol {
+  display: flex;
+}
+.fonctionnement li {
+  background-color: #f6f6f6;
+  padding: 1rem 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */
