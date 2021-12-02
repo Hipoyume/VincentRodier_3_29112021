@@ -1,5 +1,6 @@
 @use "../utils/box-shadow.scss";
-@use "../utils/transform-scale";
+@use "../utils/transition-scale.scss";
+@use "../utils/transform-scale.scss";
 
 .fonctionnement {
   padding: 1rem 1rem;
@@ -12,7 +13,6 @@
     padding: 0 0.55rem;
     display: flex;
     gap: 2rem;
-
     @media (max-width: 991px){
       flex-direction: column;
       margin: auto;
@@ -44,6 +44,7 @@
     border-radius: 1.5rem;
     flex-grow: 1;
     font-weight: bold;
+    @include transition-scale.t-property;
     &:hover {
       @include transform-scale.t-scale;
       background-color: #f2e8fd;

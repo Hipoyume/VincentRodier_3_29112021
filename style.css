@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 body {
+  max-width: 1200px;
+  margin: auto;
+  background: #99E2D0;
+}
+
+body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -64,11 +70,12 @@ header {
   padding: 1rem 2rem;
   border-radius: 2rem;
   border: none;
-  transition: 0.18s;
   cursor: pointer;
+  transform: scale(1);
+  transition: transform 50ms;
 }
 .reservation button:hover {
-  transform: scale(1.018);
+  transform: scale(1.028);
 }
 
 :root {
@@ -109,6 +116,8 @@ header {
   border-radius: 1.5rem;
   flex-grow: 1;
   font-weight: bold;
+  transform: scale(1);
+  transition: transform 50ms;
 }
 .fonctionnement li::before {
   counter-increment: number;
@@ -126,7 +135,7 @@ header {
   left: -0.75rem;
 }
 .fonctionnement li:hover {
-  transform: scale(1.018);
+  transform: scale(1.028);
   background-color: #f2e8fd;
 }
 .fonctionnement li:hover i {
@@ -136,12 +145,6 @@ header {
   font-size: medium;
   color: gray;
   margin-right: 1.5rem;
-}
-
-body {
-  max-width: 1200px;
-  margin: auto;
-  background: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */
