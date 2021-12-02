@@ -2,44 +2,59 @@
 @use "../utils/transform-scale";
 
 .fonctionnement {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   background: white;
   @media (max-width: 991px){
   background: none;
+  counter-reset: number;
   }
   & ol {
+    padding: 0 0.55rem;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
+
     @media (max-width: 991px){
       flex-direction: column;
+      margin: auto;
     }
   }
   & li {
     &::before {
-      content: "counter"(steps);
-      counter-increment: steps;
+      counter-increment: number;
+      content: counter(number);
+      background-color: #9356DC;
+      color: white;
+      font-weight: 300;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: -0.75rem;
     }
-    margin-right: 1rem;
+    position: relative;
+    list-style-type: none;
     background-color: #f6f6f6;
     @include box-shadow.b-shadow;
+    padding-left: 2rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border-radius: 1.5rem;
     flex-grow: 1;
     font-weight: bold;
-    
     &:hover {
       @include transform-scale.t-scale;
       background-color: #f2e8fd;
       i{
-        color: #9356DC;
+        color: #904fe0;
       }
     }
     & i {
-      font-size: large;
+      font-size: medium;
       color: gray;
       margin-right: 1.5rem;
-      margin-left: 2.5rem;
     }
   }
 }

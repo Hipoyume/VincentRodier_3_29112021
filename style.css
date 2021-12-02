@@ -78,27 +78,32 @@ header {
 }
 
 .fonctionnement {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   background: white;
 }
 @media (max-width: 991px) {
   .fonctionnement {
     background: none;
+    counter-reset: number;
   }
 }
 .fonctionnement ol {
+  padding: 0 0.55rem;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 @media (max-width: 991px) {
   .fonctionnement ol {
     flex-direction: column;
+    margin: auto;
   }
 }
 .fonctionnement li {
-  margin-right: 1rem;
+  position: relative;
+  list-style-type: none;
   background-color: #f6f6f6;
   box-shadow: 2px 1px 8px -3px #000000;
+  padding-left: 2rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   border-radius: 1.5rem;
@@ -106,21 +111,31 @@ header {
   font-weight: bold;
 }
 .fonctionnement li::before {
-  content: "counter" steps;
-  counter-increment: steps;
+  counter-increment: number;
+  content: counter(number);
+  background-color: #9356DC;
+  color: white;
+  font-weight: 300;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -0.75rem;
 }
 .fonctionnement li:hover {
   transform: scale(1.018);
   background-color: #f2e8fd;
 }
 .fonctionnement li:hover i {
-  color: #9356DC;
+  color: #904fe0;
 }
 .fonctionnement li i {
-  font-size: large;
+  font-size: medium;
   color: gray;
   margin-right: 1.5rem;
-  margin-left: 2.5rem;
 }
 
 body {
