@@ -3,14 +3,13 @@
 @use "../utils/transform-scale.scss";
 
 .fonctionnement {
-  padding: 1rem 1rem;
   background: white;
   counter-reset: number;
   @media (max-width: 991px){
   background: none;
   }
   & ol {
-    padding: 0 0.55rem;
+    padding: 0 1.5rem;
     display: flex;
     gap: 2rem;
     @media (max-width: 991px){

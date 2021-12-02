@@ -78,7 +78,6 @@ header {
 }
 
 .fonctionnement {
-  padding: 1rem 1rem;
   background: white;
   counter-reset: number;
 }
@@ -88,7 +87,7 @@ header {
   }
 }
 .fonctionnement ol {
-  padding: 0 0.55rem;
+  padding: 0 1.5rem;
   display: flex;
   gap: 2rem;
 }
@@ -143,9 +142,6 @@ header {
 .restaurants-disponibles {
   background: #f6f6f6;
 }
-.restaurants-disponibles h2 {
-  padding: 1rem;
-}
 .restaurants-disponibles .restaurants-disponibles__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -159,11 +155,17 @@ header {
 }
 .restaurants-disponibles .card {
   border: 1px solid green;
+  border-radius: 2rem;
 }
 .restaurants-disponibles .card .card__image {
   background: url("../../assets/restaurant_1.jpg");
   background-size: cover;
   height: 10rem;
+}
+
+h2 {
+  margin: 1rem;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
