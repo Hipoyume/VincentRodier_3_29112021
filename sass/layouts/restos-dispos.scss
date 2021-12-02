@@ -13,21 +13,16 @@
   }
   }
   .card {
-  border: 1px solid green;
+  &__image {
   border-radius: 2rem;
-  background-size: cover;
   height: 10rem;
-  &__image-1 {
-    background: url("../../assets/restaurant_1.jpg");
   }
-  &__image-2 {
-    background: url("../../assets/restaurant_2.jpg");
+  @for $i from 1 through 4 {
+    &__image-#{$i} {
+      background: url("/assets/restaurant_#{$i}.jpg");
+      background-size: cover;
+      background-position: 50% 50%;
+    }
   }
-  &__image-3 {
-    background: url("../../assets/restaurant_3.jpg");
-  }
-  &__image-4 {
-    background: url("../../assets/restaurant_4.jpg");
-  }
-  }
+}
 }

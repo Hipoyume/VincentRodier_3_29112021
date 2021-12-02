@@ -153,23 +153,29 @@ header {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.restaurants-disponibles .card {
-  border: 1px solid green;
+.restaurants-disponibles .card__image {
   border-radius: 2rem;
-  background-size: cover;
   height: 10rem;
 }
 .restaurants-disponibles .card__image-1 {
-  background: url("../../assets/restaurant_1.jpg");
+  background: url("/assets/restaurant_1.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 .restaurants-disponibles .card__image-2 {
-  background: url("../../assets/restaurant_2.jpg");
+  background: url("/assets/restaurant_2.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 .restaurants-disponibles .card__image-3 {
-  background: url("../../assets/restaurant_3.jpg");
+  background: url("/assets/restaurant_3.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 .restaurants-disponibles .card__image-4 {
-  background: url("../../assets/restaurant_4.jpg");
+  background: url("/assets/restaurant_4.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 h2 {
