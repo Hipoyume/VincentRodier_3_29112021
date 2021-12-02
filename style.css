@@ -77,20 +77,14 @@ header {
   transform: scale(1.028);
 }
 
-:root {
-  --color1: #9356DC;
-  --color2: #FF79DA;
-  --color3: #99E2D0;
-}
-
 .fonctionnement {
   padding: 1rem 1rem;
   background: white;
+  counter-reset: number;
 }
 @media (max-width: 991px) {
   .fonctionnement {
     background: none;
-    counter-reset: number;
   }
 }
 .fonctionnement ol {
@@ -152,22 +146,24 @@ header {
 .restaurants-disponibles h2 {
   padding: 1rem;
 }
-.restaurants-disponibles .restaurants-disponibles__flex {
-  display: flex;
-  flex-wrap: wrap;
+.restaurants-disponibles .restaurants-disponibles__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  padding: 0 0.5rem;
 }
 @media (max-width: 991px) {
-  .restaurants-disponibles .restaurants-disponibles__flex {
-    flex-direction: column;
-    padding: 0 0.5rem;
+  .restaurants-disponibles .restaurants-disponibles__grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .restaurants-disponibles .card {
   border: 1px solid green;
-  height: 4rem;
-  flex-grow: 1;
-  min-width: 25rem;
+}
+.restaurants-disponibles .card .card__image {
+  background: url("../../assets/restaurant_1.jpg");
+  background-size: cover;
+  height: 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */

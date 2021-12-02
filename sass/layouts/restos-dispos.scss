@@ -1,23 +1,25 @@
+@use "../utils/variables.scss";
+
 .restaurants-disponibles {
   background: #f6f6f6;
   h2 {
     padding: 1rem;
   }
-  .restaurants-disponibles__flex {
-    display: flex;
-    flex-wrap: wrap;
+  .restaurants-disponibles__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-
-    @media (max-width: 991px){
-      flex-direction: column;
-      padding: 0 0.5rem;
+    padding: 0 0.5rem;
+    @media (max-width: variables.$breakpoint){
+      grid-template-columns: repeat(1, 1fr);
   }
   }
-
   .card {
   border: 1px solid green;
-  height: 4rem;
-  flex-grow: 1;
-  min-width: 25rem;
+  & .card__image {
+    background: url("../../assets/restaurant_1.jpg");
+    background-size: cover;
+    height: 10rem;
+  }
   }
 }

@@ -5,9 +5,9 @@
 .fonctionnement {
   padding: 1rem 1rem;
   background: white;
+  counter-reset: number;
   @media (max-width: 991px){
   background: none;
-  counter-reset: number;
   }
   & ol {
     padding: 0 0.55rem;
