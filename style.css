@@ -3,7 +3,6 @@
 body {
   max-width: 1200px;
   margin: auto;
-  background: #99E2D0;
 }
 
 body {
@@ -145,6 +144,30 @@ header {
   font-size: medium;
   color: gray;
   margin-right: 1.5rem;
+}
+
+.restaurants-disponibles {
+  background: #f6f6f6;
+}
+.restaurants-disponibles h2 {
+  padding: 1rem;
+}
+.restaurants-disponibles .restaurants-disponibles__flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (max-width: 991px) {
+  .restaurants-disponibles .restaurants-disponibles__flex {
+    flex-direction: column;
+    padding: 0 0.5rem;
+  }
+}
+.restaurants-disponibles .card {
+  border: 1px solid green;
+  height: 4rem;
+  flex-grow: 1;
+  min-width: 25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
