@@ -156,16 +156,25 @@ header {
 .restaurants-disponibles .card {
   border: 1px solid green;
   border-radius: 2rem;
-}
-.restaurants-disponibles .card .card__image {
-  background: url("../../assets/restaurant_1.jpg");
   background-size: cover;
   height: 10rem;
 }
+.restaurants-disponibles .card__image-1 {
+  background: url("../../assets/restaurant_1.jpg");
+}
+.restaurants-disponibles .card__image-2 {
+  background: url("../../assets/restaurant_2.jpg");
+}
+.restaurants-disponibles .card__image-3 {
+  background: url("../../assets/restaurant_3.jpg");
+}
+.restaurants-disponibles .card__image-4 {
+  background: url("../../assets/restaurant_4.jpg");
+}
 
 h2 {
-  margin: 1rem;
-  padding: 1rem;
+  margin: 1rem 0;
+  padding: 0 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
