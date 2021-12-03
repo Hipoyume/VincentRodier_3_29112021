@@ -7,11 +7,9 @@ body {
 
 * {
   margin: 0;
-}
-
-a {
   text-decoration: none;
   color: inherit;
+  list-style: none;
 }
 
 h2 {
@@ -231,6 +229,24 @@ header {
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
+}
+
+footer {
+  background: #353535;
+  color: whitesmoke;
+}
+footer h3 {
+  font-family: "shrikhand", cursive;
+  font-weight: 400;
+  padding: 2rem 0 0.8rem 1.2rem;
+}
+footer li {
+  margin-left: -1.1rem;
+  padding: 0.5rem 0 0rem 0rem;
+}
+footer li i {
+  font-size: 0.8rem;
+  padding-right: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
