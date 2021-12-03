@@ -221,7 +221,6 @@ header {
   border-radius: 0rem 0rem 1.1rem 1.1rem;
   padding: 1rem;
   position: relative;
-  justify-content: space-between;
 }
 .restaurants-disponibles .card__description h3 {
   margin-bottom: 0.3rem;
@@ -232,7 +231,6 @@ header {
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  justify-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
