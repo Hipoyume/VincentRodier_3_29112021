@@ -39,7 +39,7 @@ header {
   font-family: "shrikhand", cursive;
   text-align: center;
   border-bottom: 0.2rem solid rgba(0, 0, 0, 0.245);
-  padding: 0.1rem;
+  padding: 0.5rem;
 }
 @media (max-width: 991px) {
   header {
@@ -78,7 +78,7 @@ header {
 }
 .reservation button {
   margin-top: 1rem;
-  background: linear-gradient(0deg, rgba(147, 86, 220, 0.7483368347) 0%, #ff79da 80%);
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 80%);
   color: white;
   box-shadow: 2px 1px 8px -3px #000000;
   font-size: 1.2rem;
@@ -148,7 +148,7 @@ header {
   background-color: #f2e8fd;
 }
 .fonctionnement li:hover i {
-  color: #904fe0;
+  color: #9356DC;
 }
 .fonctionnement li i {
   font-size: medium;
@@ -157,7 +157,8 @@ header {
 }
 
 .restaurants-disponibles {
-  background: #f6f6f6;
+  background: #ebebeb;
+  padding-bottom: 2rem;
 }
 .restaurants-disponibles h2 {
   padding: 2.5rem 0rem 0.3rem 1rem;
@@ -177,7 +178,7 @@ header {
   position: relative;
 }
 .restaurants-disponibles .restaurants-disponibles__grid .new::before {
-  content: "Nouvo'resto!";
+  content: "Nouveau";
   position: absolute;
   height: 2rem;
   width: 5.7rem;
@@ -230,15 +231,33 @@ header {
   top: 50%;
   transform: translateY(-50%);
 }
+.restaurants-disponibles .card__description .fas {
+  color: transparent;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 80%);
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  opacity: 0;
+  transition: all 200ms;
+}
+.restaurants-disponibles .card__description .fas:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.18);
+}
 
 footer {
   background: #353535;
   color: whitesmoke;
+  padding-bottom: 1rem;
 }
 footer h3 {
   font-family: "shrikhand", cursive;
   font-weight: 400;
-  padding: 2rem 0 0.8rem 1.2rem;
+  padding: 1.5rem 0 0.8rem 1.2rem;
 }
 footer li {
   margin-left: -1.1rem;

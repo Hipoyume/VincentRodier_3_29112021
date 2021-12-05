@@ -1,6 +1,4 @@
-@use "../utils/box-shadow.scss";
-@use "../utils/transition-scale.scss";
-@use "../utils/transform-scale";
+@use "../utils/mixins.scss";
 
 .reservation {
   background: rgb(241, 241, 241);
@@ -16,16 +14,17 @@
   }
   & button {
     margin-top: 1rem;
-    background: linear-gradient(0deg, rgba(147,86,220,0.7483368347338936) 0%, rgba(255,121,218,1) 80%);  color: white;
-    @include box-shadow.b-shadow;
+    @include mixins.primary-gradient;
+    color: white;
+    @include mixins.b-shadow;
     font-size: 1.2rem;
     padding: 1rem 2rem;
     border-radius: 2rem;
     border: none;
     cursor: pointer;
-    @include transition-scale.t-property;
+    @include mixins.t-property;
   }
   & button:hover {
-    @include transform-scale.t-scale;
+    @include mixins.t-scale;
   }
 }

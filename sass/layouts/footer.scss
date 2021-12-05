@@ -3,10 +3,11 @@
 footer {
   background: colors.$footer-color;
   color: whitesmoke;
+  padding-bottom: 1rem;
   & h3 {
     font-family: 'shrikhand', cursive;
     font-weight: 400;
-    padding: 2rem 0 0.8rem 1.2rem;
+    padding: 1.5rem 0 0.8rem 1.2rem;
   }
   & li {
     margin-left:-1.1rem;

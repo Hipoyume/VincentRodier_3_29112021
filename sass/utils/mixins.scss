@@ -1,0 +1,17 @@
+@mixin primary-gradient($opacity:0.9) {
+  background: linear-gradient(0deg, rgba(147,86,220,$opacity) 0%, rgba(255,121,218,$opacity) 80%);
+}
+
+@mixin t-scale {
+  transform: scale(1.028);
+}
+
+@mixin t-property {
+  transform: scale(1);
+  transition: transform 50ms;
+}
+
+@mixin b-shadow {
+  box-shadow: 2px 1px 8px -3px #000000;
+}
+
