@@ -269,8 +269,11 @@ footer li i {
   padding-right: 0.5rem;
 }
 
-img {
-  max-width: 100%;
+.poster {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  object-position: center;
 }
 
 .description {
@@ -278,6 +281,12 @@ img {
 }
 .description h2 {
   font-family: "shrikhand", cursive;
+  font-weight: 500;
+  font-size: 1.7rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: red;
+  margin-top: -2rem;
+  padding: 1rem 1rem;
 }
 .description i {
   font-size: 1.5rem;
@@ -303,6 +312,9 @@ img {
   opacity: 1;
   transform: translateY(-50%) scale(1.18);
   cursor: pointer;
+}
+.description i {
+  right: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
