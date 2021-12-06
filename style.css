@@ -41,11 +41,6 @@ header {
   border-bottom: 0.2rem solid rgba(0, 0, 0, 0.245);
   padding: 0.5rem;
 }
-@media (max-width: 991px) {
-  header {
-    background: none;
-  }
-}
 
 .presentation {
   display: flex;
@@ -269,33 +264,33 @@ footer li i {
   padding-right: 0.5rem;
 }
 
-.poster {
+.description__poster {
   width: 100%;
   height: 50vh;
   object-fit: cover;
   object-position: center;
 }
-
-.description {
+.description__nom {
   position: relative;
 }
-.description h2 {
+.description__nom h2 {
   font-family: "shrikhand", cursive;
   font-weight: 500;
   font-size: 1.7rem;
-  border-radius: 2rem 2rem 0 0;
-  background-color: red;
+  background: #ebebeb;
   margin-top: -2rem;
-  padding: 1rem 1rem;
+  padding: 1.5rem 0 1rem 1rem;
+  border-radius: 2rem 2rem 0 0;
+  margin-bottom: 0;
 }
-.description i {
+.description__nom i {
   font-size: 1.5rem;
   position: absolute;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
 }
-.description .fas {
+.description__nom .fas {
   color: transparent;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 80%);
   background-clip: text;
@@ -308,13 +303,29 @@ footer li i {
   opacity: 0;
   transition: all 200ms;
 }
-.description .fas:hover {
+.description__nom .fas:hover {
   opacity: 1;
   transform: translateY(-50%) scale(1.18);
   cursor: pointer;
 }
-.description i {
-  right: 2rem;
+.description__nom i {
+  top: 2.7rem;
+  right: 2.6rem;
+}
+.description__menus {
+  background: #ebebeb;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  gap: 1rem;
+}
+@media (max-width: 991px) {
+  .description__menus {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.description__menus * {
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */
