@@ -1,0 +1,15 @@
+@use "../utils/variables.scss";
+@use "../utils/colors";
+@use "../utils/mixins.scss";
+
+img {
+  max-width: 100%;
+}
+
+.description {
+  position: relative;
+  & h2 {
+  font-family: 'shrikhand', cursive;
+  }
+  @include mixins.heart
+}

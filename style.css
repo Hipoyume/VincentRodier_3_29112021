@@ -247,6 +247,7 @@ header {
 .restaurants-disponibles .card__description .fas:hover {
   opacity: 1;
   transform: translateY(-50%) scale(1.18);
+  cursor: pointer;
 }
 
 footer {
@@ -266,6 +267,42 @@ footer li {
 footer li i {
   font-size: 0.8rem;
   padding-right: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.description {
+  position: relative;
+}
+.description h2 {
+  font-family: "shrikhand", cursive;
+}
+.description i {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.description .fas {
+  color: transparent;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 80%);
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  opacity: 0;
+  transition: all 200ms;
+}
+.description .fas:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.18);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

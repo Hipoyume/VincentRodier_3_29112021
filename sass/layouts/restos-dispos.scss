@@ -58,30 +58,7 @@
     & h3 {
       margin-bottom: 0.3rem;
     }
-    & i {
-      font-size: 1.5rem;
-      position: absolute;
-      right: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    .fas {
-      color: transparent;
-      @include mixins.primary-gradient(1);
-      background-clip: text;
-      -moz-background-clip: text; 
-      -webkit-background-clip: text;
-      color: transparent; 
-      -moz-text-fill-color: transparent; 
-      -webkit-text-fill-color: transparent;
-      text-decoration: none;
-      opacity: 0;
-      transition: all 200ms;
-      &:hover {
-        opacity: 1;
-        transform: translateY(-50%) scale(1.18);
-      }
-    }
+    @include mixins.heart;
   }
 }
 }
