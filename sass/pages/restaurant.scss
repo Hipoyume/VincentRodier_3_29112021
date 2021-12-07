@@ -3,7 +3,6 @@
 @use "../utils/mixins.scss";
 @use "../utils/animations.scss";
 
-
 .description {
   &__poster {
     width: 100%;
@@ -55,15 +54,18 @@
     border-radius: 1rem;
     display: flex;
     overflow: hidden;
-    @include mixins.b-shadow; 
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    @include mixins.b-shadow;
     &__flex {
       padding: 1rem 0.8rem;
+      overflow: hidden;
     }
     & h4 {
       font-size: larger;
       font-weight: 500;
+      @include mixins.shrink;
+    }
+    & p {
+      @include mixins.shrink;
     }
     & span {
       align-self: end;
@@ -90,10 +92,10 @@
         font-weight: 700;
       }
     }
-    &:hover { 
+    &:hover {
       .plate-price__validation {
-      margin-right: 0;
-      opacity: 1;
+        margin-right: 0;
+        opacity: 1;
       }
       @keyframes rotation {
         0% {

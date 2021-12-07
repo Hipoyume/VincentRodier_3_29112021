@@ -339,15 +339,22 @@ footer li i {
   display: flex;
   overflow: hidden;
   box-shadow: 2px 1px 8px -3px #000000;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .menus .plate-price__flex {
   padding: 1rem 0.8rem;
+  overflow: hidden;
 }
 .menus .plate-price h4 {
   font-size: larger;
   font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menus .plate-price p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menus .plate-price span {
   align-self: end;
