@@ -331,15 +331,16 @@ footer li i {
   border-bottom: 1px green solid;
   margin-bottom: 0.3rem;
 }
-.menus__entrées__flex {
-  display: flex;
-}
 .menus .plate-price {
+  cursor: pointer;
   margin: 0;
   background: white;
   border-radius: 1rem;
   display: flex;
   overflow: hidden;
+  box-shadow: 2px 1px 8px -3px #000000;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menus .plate-price__flex {
   padding: 1rem 0.8rem;
@@ -350,24 +351,44 @@ footer li i {
 }
 .menus .plate-price span {
   align-self: end;
-  padding: 0 1rem 1.3rem 0;
+  padding: 0 0.55rem 1.3rem 0;
   margin-left: auto;
   font-weight: 700;
 }
 .menus .plate-price__validation {
   align-self: center;
   background: #99E2D0;
-  padding: 1.719rem 1.5rem;
+  padding: 1.35rem 1.5rem;
   border-radius: 0 1rem 1rem 0;
   margin-right: -3rem;
   opacity: 0;
-  z-index: -1;
+  transition: 0.8s;
+}
+.menus .plate-price__validation i {
+  display: grid;
+  place-items: center;
+  background: white;
+  width: 2rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  color: #99E2D0;
+  font-weight: 700;
 }
 .menus .plate-price:hover .plate-price__validation {
   margin-right: 0;
   opacity: 1;
-  z-index: 1;
-  transition: 0.8s;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.menus .plate-price:hover i {
+  animation-name: rotation;
+  animation-duration: 0.8s;
 }
 
 /*# sourceMappingURL=style.css.map */

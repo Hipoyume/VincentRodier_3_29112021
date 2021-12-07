@@ -1,6 +1,8 @@
 @use "../utils/variables.scss";
 @use "../utils/colors";
 @use "../utils/mixins.scss";
+@use "../utils/animations.scss";
+
 
 .description {
   &__poster {
@@ -45,16 +47,17 @@
   &__entrées {
     border-bottom: 1px green solid;
     margin-bottom: 0.3rem;
-    &__flex {
-      display: flex;
-    }
   }
   .plate-price {
+    cursor: pointer;
     margin: 0;
     background: white;
     border-radius: 1rem;
     display: flex;
     overflow: hidden;
+    @include mixins.b-shadow; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
     &__flex {
       padding: 1rem 0.8rem;
     }
@@ -64,27 +67,46 @@
     }
     & span {
       align-self: end;
-      padding: 0 1rem 1.3rem 0;
+      padding: 0 0.55rem 1.3rem 0;
       margin-left: auto;
       font-weight: 700;
     }
     &__validation {
       align-self: center;
       background: colors.$tertiary-color;
-      padding: 1.719rem 1.5rem;
+      padding: 1.35rem 1.5rem;
       border-radius: 0 1rem 1rem 0;
       margin-right: -3rem;
       opacity: 0;
-      z-index: -1;  
+      transition: 0.8s;
+      i {
+        display: grid;
+        place-items: center;
+        background: white;
+        width: 2rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        color: colors.$tertiary-color;
+        font-weight: 700;
+      }
     }
-    &:hover .plate-price__validation {
+    &:hover { 
+      .plate-price__validation {
       margin-right: 0;
       opacity: 1;
-      z-index: 1;
-      transition: 0.8s;
+      }
+      @keyframes rotation {
+        0% {
+          transform: rotate(-360deg);
+        }
+        100% {
+          transform: rotate(0);
+        }
+      }
+      i {
+        animation-name: rotation;
+        animation-duration: 0.8s;
+      }
     }
-  }
-
-  & * {
   }
 }
