@@ -355,10 +355,12 @@ footer li i {
 .menus .plate-price__validation {
   align-self: center;
   background: #99E2D0;
-  padding: 1.8rem 1.5rem;
+  padding: 1.719rem 1.5rem;
   border-radius: 0 1rem 1rem 0;
-  margin-right: -4rem;
-  opacity: 0;
+  display: none;
+}
+.menus .plate-price:hover .plate-price__validation {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
