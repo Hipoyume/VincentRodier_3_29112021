@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 body {
@@ -314,6 +315,7 @@ footer li i {
 }
 
 .menus {
+  margin-top: -0.5rem;
   background: #ebebeb;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -325,11 +327,36 @@ footer li i {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.menus__entrées {
+  border-bottom: 1px green solid;
+  margin-bottom: 0.3rem;
+}
+.menus__entrées__flex {
+  display: flex;
+}
 .menus .plate-price {
   background: white;
+  border-radius: 1rem;
+  display: flex;
 }
-.menus * {
-  border: 1px solid red;
+.menus .plate-price__flex {
+  padding: 1rem 0.8rem;
+}
+.menus .plate-price h4 {
+  font-size: larger;
+  font-weight: 500;
+}
+.menus .plate-price span {
+  align-self: end;
+  padding: 0 1rem 1.3rem 0;
+  margin-left: auto;
+  font-weight: 700;
+}
+.menus .plate-price__validation {
+  align-self: center;
+  background: #99E2D0;
+  padding: 1.8rem 1.5rem;
+  border-radius: 0 1rem 1rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
