@@ -335,9 +335,11 @@ footer li i {
   display: flex;
 }
 .menus .plate-price {
+  margin: 0;
   background: white;
   border-radius: 1rem;
   display: flex;
+  overflow: hidden;
 }
 .menus .plate-price__flex {
   padding: 1rem 0.8rem;
@@ -357,10 +359,15 @@ footer li i {
   background: #99E2D0;
   padding: 1.719rem 1.5rem;
   border-radius: 0 1rem 1rem 0;
-  display: none;
+  margin-right: -3rem;
+  opacity: 0;
+  z-index: -1;
 }
 .menus .plate-price:hover .plate-price__validation {
-  display: block;
+  margin-right: 0;
+  opacity: 1;
+  z-index: 1;
+  transition: 0.8s;
 }
 
 /*# sourceMappingURL=style.css.map */
