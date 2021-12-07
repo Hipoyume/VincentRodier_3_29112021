@@ -43,11 +43,23 @@
     // -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
   }
-  &__entrées {
-    border-bottom: 1px green solid;
+  &__nom {
     margin-bottom: 0.3rem;
+    margin-top: 1.7rem;
+    font-weight: 400;
+    position: relative;
+    &::after {
+      content: "" ;
+      position: absolute;
+      top: 1.5rem;
+      left: 0;
+      height: 0.18rem;
+      width: 2.5rem;
+      background: colors.$tertiary-color;
+    }
   }
   .plate-price {
+    padding-bottom: 0;
     cursor: pointer;
     margin: 0;
     background: white;
@@ -69,14 +81,14 @@
     }
     & span {
       align-self: end;
-      padding: 0 0.55rem 1.3rem 0;
+      padding: 0 0.9rem 1.3rem 0;
       margin-left: auto;
       font-weight: 700;
     }
     &__validation {
       align-self: center;
       background: colors.$tertiary-color;
-      padding: 1.35rem 1.5rem;
+      padding: 1.8rem 1rem;
       border-radius: 0 1rem 1rem 0;
       margin-right: -3rem;
       opacity: 0;
@@ -85,7 +97,7 @@
         display: grid;
         place-items: center;
         background: white;
-        width: 2rem;
+        width: 1.1rem;
         aspect-ratio: 1;
         border-radius: 50%;
         color: colors.$tertiary-color;
@@ -110,5 +122,18 @@
         animation-duration: 0.8s;
       }
     }
+  }
+}
+.order {
+  height: 15vh;
+  display: grid;
+  place-items: center;
+  padding-bottom: 1rem;
+  background: colors.$background-grey;
+  & button {
+    @include mixins.button;
+  }
+  & button:hover {
+    @include mixins.t-scale;
   }
 }
