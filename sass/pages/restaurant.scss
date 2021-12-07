@@ -29,18 +29,24 @@
       right: 2.6rem;
     }
   }
-  &__menus {
-    background: colors.$background-grey;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 1rem;
-    gap: 1rem;
-    @media (max-width: variables.$breakpoint){
-      // -ms-grid-columns: 1fr; 
-      grid-template-columns: repeat(1, 1fr);
-    }
-    & * {
-      border: 1px solid red;
-    }
+}
+
+.menus {
+  background: colors.$background-grey;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  gap: 1rem;
+  @media (max-width: variables.$breakpoint) {
+    // -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  &__entrées {
+  }
+  .plate-price {
+    background: white;
+  }
+  & * {
+    border: 1px solid red;
   }
 }

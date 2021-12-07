@@ -312,7 +312,8 @@ footer li i {
   top: 2.7rem;
   right: 2.6rem;
 }
-.description__menus {
+
+.menus {
   background: #ebebeb;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -320,11 +321,14 @@ footer li i {
   gap: 1rem;
 }
 @media (max-width: 991px) {
-  .description__menus {
+  .menus {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.description__menus * {
+.menus .plate-price {
+  background: white;
+}
+.menus * {
   border: 1px solid red;
 }
 
