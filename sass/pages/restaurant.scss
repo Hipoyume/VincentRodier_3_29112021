@@ -88,6 +88,13 @@ header {
     @include mixins.b-shadow;
     animation: appear 1s;
     animation-fill-mode: both;
+    animation-delay: 0.98s;
+    
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      animation-delay: 0.18s * $i;
+    }
+  }
     &__flex {
       padding: 1rem 0.8rem;
       overflow: hidden;
