@@ -99,6 +99,7 @@ header {
     }
     & p {
       @include mixins.shrink;
+      font-weight: 300;
     }
     & span {
       align-self: end;
@@ -109,7 +110,7 @@ header {
     &__validation {
       align-self: center;
       background: colors.$tertiary-color;
-      padding: 1.8rem 1rem;
+      padding: 1.9rem 1rem;
       border-radius: 0 1rem 1rem 0;
       margin-right: -3rem;
       opacity: 0;
@@ -119,7 +120,7 @@ header {
         place-items: center;
         background: white;
         width: 1.1rem;
-        aspect-ratio: 1;
+        height: 1.1rem;
         border-radius: 50%;
         color: colors.$tertiary-color;
         font-weight: 700;

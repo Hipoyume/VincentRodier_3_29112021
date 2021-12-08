@@ -98,10 +98,10 @@ header {
   animation: disappear 0.18s forwards;
   display: grid;
   place-items: center;
-  animation-delay: 1.98s;
+  animation-delay: 0.98s;
 }
 .loader i {
-  animation: spin 0.99s linear infinite;
+  animation: spin 0.48s linear infinite;
   font-size: 10em;
   color: #99E2D0;
 }
@@ -426,6 +426,7 @@ header h1 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-weight: 300;
 }
 .menus .plate-price span {
   align-self: end;
@@ -436,7 +437,7 @@ header h1 {
 .menus .plate-price__validation {
   align-self: center;
   background: #99E2D0;
-  padding: 1.8rem 1rem;
+  padding: 1.9rem 1rem;
   border-radius: 0 1rem 1rem 0;
   margin-right: -3rem;
   opacity: 0;
@@ -447,7 +448,7 @@ header h1 {
   place-items: center;
   background: white;
   width: 1.1rem;
-  aspect-ratio: 1;
+  height: 1.1rem;
   border-radius: 50%;
   color: #99E2D0;
   font-weight: 700;

@@ -31,9 +31,9 @@
   animation: disappear 0.18s forwards;
   display: grid;
   place-items: center;
-  animation-delay: 1.98s;
+  animation-delay: .98s;
   & i {
-    animation: spin 0.99s linear infinite;
+    animation: spin 0.48s linear infinite;
     font-size: 10em;
     color: colors.$tertiary-color ;
   }
