@@ -271,6 +271,11 @@ header a {
   align-self: center;
   margin-left: 0.5rem;
   font-size: larger;
+  transition: transform 0.2s;
+  font-weight: bold;
+}
+header a:hover {
+  transform: scale(1.25);
 }
 header h1 {
   margin: auto;
