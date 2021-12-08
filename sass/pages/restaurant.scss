@@ -53,11 +53,13 @@ header {
 .menus {
   margin-top: -0.5rem;
   background: colors.$background-grey;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
   gap: 1rem;
+  display: grid;
+  // -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
   @media (max-width: variables.$breakpoint) {
+    display: grid;
     // -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
   }
@@ -76,6 +78,7 @@ header {
       background: colors.$tertiary-color;
     }
   }
+  
   .plate-price {
     padding-bottom: 0;
     cursor: pointer;
@@ -85,6 +88,8 @@ header {
     display: flex;
     overflow: hidden;
     @include mixins.b-shadow;
+    animation: appear 1s;
+    animation-fill-mode: both;
     &__flex {
       padding: 1rem 0.8rem;
       overflow: hidden;
