@@ -3,6 +3,19 @@
 @use "../utils/mixins.scss";
 @use "../utils/animations.scss";
 
+
+header {
+  display: flex;
+  & a {
+    align-self: center;
+    margin-left: 0.5rem;
+    font-size:larger;
+  }
+  & h1 {
+    margin: auto;
+  }
+}
+
 .description {
   &__poster {
     width: 100%;
@@ -125,10 +138,11 @@
   }
 }
 .order {
+  margin-top: -0.5rem;
+  padding-bottom: 2rem;
   height: 15vh;
   display: grid;
   place-items: center;
-  padding-bottom: 1rem;
   background: colors.$background-grey;
   & button {
     @include mixins.button;

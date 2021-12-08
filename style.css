@@ -264,6 +264,18 @@ footer li i {
   padding-right: 0.5rem;
 }
 
+header {
+  display: flex;
+}
+header a {
+  align-self: center;
+  margin-left: 0.5rem;
+  font-size: larger;
+}
+header h1 {
+  margin: auto;
+}
+
 .description__poster {
   width: 100%;
   height: 50vh;
@@ -410,10 +422,11 @@ footer li i {
 }
 
 .order {
+  margin-top: -0.5rem;
+  padding-bottom: 2rem;
   height: 15vh;
   display: grid;
   place-items: center;
-  padding-bottom: 1rem;
   background: #ebebeb;
 }
 .order button {
