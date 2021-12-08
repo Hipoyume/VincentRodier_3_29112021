@@ -1,4 +1,5 @@
 @use "../utils/mixins.scss";
+@use "../utils/colors.scss";
 
 .reservation {
   background: rgb(241, 241, 241);
@@ -19,3 +20,37 @@
     @include mixins.t-scale;
   }
 }
+
+.loader {
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  height: 100vh;
+  inset: 0;
+  opacity: 0.8;
+  animation: disappear 0.18s forwards;
+  display: grid;
+  place-items: center;
+  animation-delay: 1.98s;
+  & i {
+    animation: spin 0.99s linear infinite;
+    font-size: 10em;
+    color: colors.$tertiary-color ;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
