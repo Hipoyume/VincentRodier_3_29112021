@@ -1,7 +1,7 @@
 @use "./colors.scss";
 
 @mixin primary-gradient($opacity:0.9) {
-  background: linear-gradient(0deg, rgba(147,86,220,$opacity) 0%, rgba(255,121,218,$opacity) 80%);
+  background: linear-gradient(0deg, rgba(147,86,220,75) 0%, rgba(255,121,218,100) 80%);
 }
 
 
@@ -28,7 +28,7 @@
   }
   .fas {
     color: transparent;
-    background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 80%);
+    background: linear-gradient(365deg, #9356dc 0%, #ff79da 100%);
     background-clip: text;
     -moz-background-clip: text; 
     -webkit-background-clip: text;

@@ -18,6 +18,10 @@
   }
   & button:hover {
     @include mixins.t-scale;
+    background: linear-gradient(
+      0deg,
+      lighten(#9356dc, 6%) 0%,
+      lighten(#ff79da, 3%) 100%);
   }
 }
 

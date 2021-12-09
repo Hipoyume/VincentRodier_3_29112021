@@ -73,7 +73,7 @@ header {
 }
 .reservation button {
   margin-top: 1rem;
-  background: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 80%);
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 80%);
   color: white;
   box-shadow: 2px 1px 8px -3px #353535;
   font-size: 1.2rem;
@@ -86,6 +86,7 @@ header {
 }
 .reservation button:hover {
   transform: scale(1.028);
+  background: linear-gradient(0deg, #a36fe1 0%, #ff88de 100%);
 }
 
 .loader {
@@ -222,22 +223,22 @@ header {
   height: 13rem;
 }
 .restaurants-disponibles .card__image-1 {
-  background: url("/assets/restaurant_1.jpg");
+  background: url("assets/restaurant_1.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
 .restaurants-disponibles .card__image-2 {
-  background: url("/assets/restaurant_2.jpg");
+  background: url("assets/restaurant_2.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
 .restaurants-disponibles .card__image-3 {
-  background: url("/assets/restaurant_3.jpg");
+  background: url("assets/restaurant_3.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
 .restaurants-disponibles .card__image-4 {
-  background: url("/assets/restaurant_4.jpg");
+  background: url("assets/restaurant_4.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -259,7 +260,7 @@ header {
 }
 .restaurants-disponibles .card__description .fas {
   color: transparent;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 80%);
+  background: linear-gradient(365deg, #9356dc 0%, #ff79da 100%);
   background-clip: text;
   -moz-background-clip: text;
   -webkit-background-clip: text;
@@ -350,7 +351,7 @@ header h1 {
 }
 .description__nom .fas {
   color: transparent;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 80%);
+  background: linear-gradient(365deg, #9356dc 0%, #ff79da 100%);
   background-clip: text;
   -moz-background-clip: text;
   -webkit-background-clip: text;
@@ -442,6 +443,21 @@ header h1 {
 .menus .plate-price:nth-child(10) {
   animation-delay: 1.8s;
 }
+.menus .plate-price:nth-child(11) {
+  animation-delay: 1.98s;
+}
+.menus .plate-price:nth-child(12) {
+  animation-delay: 2.16s;
+}
+.menus .plate-price:nth-child(13) {
+  animation-delay: 2.34s;
+}
+.menus .plate-price:nth-child(14) {
+  animation-delay: 2.52s;
+}
+.menus .plate-price:nth-child(15) {
+  animation-delay: 2.7s;
+}
 .menus .plate-price__flex {
   padding: 1rem 0.8rem;
   overflow: hidden;
@@ -511,7 +527,7 @@ header h1 {
 }
 .order button {
   margin-top: 1rem;
-  background: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 80%);
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 80%);
   color: white;
   box-shadow: 2px 1px 8px -3px #353535;
   font-size: 1.2rem;
@@ -524,6 +540,7 @@ header h1 {
 }
 .order button:hover {
   transform: scale(1.028);
+  background: linear-gradient(0deg, #a36fe1 0%, #ff88de 100%);
 }
 
 /*# sourceMappingURL=style.css.map */
