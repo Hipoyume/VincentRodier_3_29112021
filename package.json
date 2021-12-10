@@ -4,7 +4,8 @@
   "description": "Troisieme projet chez OpenClassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style.scss style.css"
+    "sass": "sass --watch style.scss style.css",
+    "prefix": "postcss style.css -u autoprefixer -o ./build/style.min.css"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/Hipoyume/VincentRodier_3_29112021#readme",
   "devDependencies": {
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2",
     "sass": "^1.44.0"
   }
 }
